@@ -156,3 +156,780 @@
 2025-12-02T14:14:52.868+01:00 DEBUG 21568 --- [mapa] [http-nio-8080-exec-6] [                                                 ] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
 2025-12-02T14:14:52.870+01:00 DEBUG 21568 --- [mapa] [http-nio-8080-exec-6] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2025-12-02T14:14:52.871+01:00 DEBUG 21568 --- [mapa] [http-nio-8080-exec-6] [                                                 ] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T14:39:09.771+01:00  INFO 8156 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : Starting MapaApplication using Java 17.0.16 with PID 8156 (D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa\target\classes started by daw in D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa)
+2025-12-03T14:39:09.780+01:00  INFO 8156 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T14:39:11.045+01:00  INFO 8156 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T14:39:11.131+01:00  INFO 8156 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2025-12-03T14:39:11.949+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-03T14:39:11.964+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T14:39:11.965+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-03T14:39:12.038+01:00  INFO 8156 --- [mapa] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2138 ms
+2025-12-03T14:39:12.268+01:00 DEBUG 8156 --- [mapa] [main] [                                                 ] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-12-03T14:39:12.461+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T14:39:12.685+01:00  INFO 8156 --- [mapa] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-03T14:39:13.274+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T14:39:13.320+01:00  INFO 8156 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T14:39:13.713+01:00  INFO 8156 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7320750c
+2025-12-03T14:39:13.716+01:00  INFO 8156 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T14:39:13.796+01:00  WARN 8156 --- [mapa] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T14:39:13.813+01:00  INFO 8156 --- [mapa] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/citydungeon]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: citydungeon/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T14:39:15.035+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T14:39:15.814+01:00  INFO 8156 --- [mapa] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T14:39:15.917+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-03T14:39:16.330+01:00  WARN 8156 --- [mapa] [main] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+2025-12-03T14:39:16.334+01:00  INFO 8156 --- [mapa] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T14:39:16.338+01:00  INFO 8156 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T14:39:16.351+01:00  INFO 8156 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-03T14:39:16.356+01:00  INFO 8156 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-03T14:39:16.375+01:00  INFO 8156 --- [mapa] [main] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-03T14:39:16.399+01:00 ERROR 8156 --- [mapa] [main] [                                                 ] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1206) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1172) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1109) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:979) ~[spring-context-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:441) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at com.calabozo.mapa.MapaApplication.main(MapaApplication.java:37) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1992) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1956) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1848) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1696) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:351) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1383) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1992) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1956) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1848) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1696) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 84 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:129) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 101 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'OAuth2AuthorizedClientManager': Failed to instantiate [org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager]: Factory method 'getAuthorizedClientManager' threw exception with message: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfUnique(DefaultListableBeanFactory.java:2593) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration.<init>(OAuth2ClientConfiguration.java:129) ~[spring-security-config-7.0.0-M3.jar:7.0.0-M3]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 103 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager]: Factory method 'getAuthorizedClientManager' threw exception with message: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 122 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:735) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:373) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.BeanFactoryUtils.beanOfTypeIncludingAncestors(BeanFactoryUtils.java:451) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2AuthorizedClientManagerRegistrar.getAuthorizedClientManager(OAuth2ClientConfiguration.java:221) ~[spring-security-config-7.0.0-M3.jar:7.0.0-M3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 125 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:604) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 143 common frames omitted
+Caused by: java.lang.IllegalStateException: Client id of registration 'google' must not be empty.
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.validateRegistration(OAuth2ClientProperties.java:71) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.validate(OAuth2ClientProperties.java:66) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.afterPropertiesSet(OAuth2ClientProperties.java:62) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 154 common frames omitted
+
+2025-12-03T14:39:27.339+01:00  INFO 14124 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : Starting MapaApplication using Java 17.0.16 with PID 14124 (D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa\target\classes started by daw in D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa)
+2025-12-03T14:39:27.348+01:00  INFO 14124 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T14:39:28.576+01:00  INFO 14124 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T14:39:28.661+01:00  INFO 14124 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
+2025-12-03T14:39:29.539+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-03T14:39:29.558+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T14:39:29.558+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-03T14:39:29.650+01:00  INFO 14124 --- [mapa] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2230 ms
+2025-12-03T14:39:29.868+01:00 DEBUG 14124 --- [mapa] [main] [                                                 ] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-12-03T14:39:30.041+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T14:39:30.292+01:00  INFO 14124 --- [mapa] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-03T14:39:30.892+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T14:39:30.947+01:00  INFO 14124 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T14:39:31.349+01:00  INFO 14124 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c0fe6c5
+2025-12-03T14:39:31.353+01:00  INFO 14124 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T14:39:31.418+01:00  WARN 14124 --- [mapa] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T14:39:31.438+01:00  INFO 14124 --- [mapa] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/citydungeon]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: citydungeon/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T14:39:32.805+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T14:39:32.915+01:00  INFO 14124 --- [mapa] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T14:39:33.022+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-03T14:39:33.432+01:00  WARN 14124 --- [mapa] [main] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+2025-12-03T14:39:33.434+01:00  INFO 14124 --- [mapa] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T14:39:33.438+01:00  INFO 14124 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T14:39:33.450+01:00  INFO 14124 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-03T14:39:33.454+01:00  INFO 14124 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-03T14:39:33.470+01:00  INFO 14124 --- [mapa] [main] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-03T14:39:33.488+01:00 ERROR 14124 --- [mapa] [main] [                                                 ] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1206) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1172) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1109) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:979) ~[spring-context-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:441) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at com.calabozo.mapa.MapaApplication.main(MapaApplication.java:37) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1992) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1956) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1848) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1696) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:351) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1383) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1992) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1956) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1848) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1696) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 84 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:129) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 101 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'OAuth2AuthorizedClientManager': Failed to instantiate [org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager]: Factory method 'getAuthorizedClientManager' threw exception with message: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfUnique(DefaultListableBeanFactory.java:2593) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration.<init>(OAuth2ClientConfiguration.java:129) ~[spring-security-config-7.0.0-M3.jar:7.0.0-M3]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 103 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager]: Factory method 'getAuthorizedClientManager' threw exception with message: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 122 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:735) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:373) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.BeanFactoryUtils.beanOfTypeIncludingAncestors(BeanFactoryUtils.java:451) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2AuthorizedClientManagerRegistrar.getAuthorizedClientManager(OAuth2ClientConfiguration.java:221) ~[spring-security-config-7.0.0-M3.jar:7.0.0-M3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 125 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:604) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 143 common frames omitted
+Caused by: java.lang.IllegalStateException: Client id of registration 'google' must not be empty.
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.validateRegistration(OAuth2ClientProperties.java:71) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.validate(OAuth2ClientProperties.java:66) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.afterPropertiesSet(OAuth2ClientProperties.java:62) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 154 common frames omitted
+
+2025-12-03T14:41:45.406+01:00  INFO 13688 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : Starting MapaApplication using Java 17.0.16 with PID 13688 (D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa\target\classes started by daw in D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa)
+2025-12-03T14:41:45.413+01:00  INFO 13688 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T14:41:46.645+01:00  INFO 13688 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T14:41:46.714+01:00  INFO 13688 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2025-12-03T14:41:47.448+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-03T14:41:47.465+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T14:41:47.466+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-03T14:41:47.536+01:00  INFO 13688 --- [mapa] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2056 ms
+2025-12-03T14:41:47.733+01:00 DEBUG 13688 --- [mapa] [main] [                                                 ] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-12-03T14:41:47.901+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T14:41:48.107+01:00  INFO 13688 --- [mapa] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-03T14:41:48.693+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T14:41:48.731+01:00  INFO 13688 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T14:41:49.053+01:00  INFO 13688 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c0fe6c5
+2025-12-03T14:41:49.056+01:00  INFO 13688 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T14:41:49.121+01:00  WARN 13688 --- [mapa] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T14:41:49.139+01:00  INFO 13688 --- [mapa] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/citydungeon]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: citydungeon/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T14:41:50.305+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T14:41:50.408+01:00  INFO 13688 --- [mapa] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T14:41:50.520+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-03T14:41:50.937+01:00  WARN 13688 --- [mapa] [main] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+2025-12-03T14:41:50.939+01:00  INFO 13688 --- [mapa] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T14:41:50.944+01:00  INFO 13688 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-03T14:41:50.954+01:00  INFO 13688 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-03T14:41:50.957+01:00  INFO 13688 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-12-03T14:41:50.973+01:00  INFO 13688 --- [mapa] [main] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-03T14:41:50.995+01:00 ERROR 13688 --- [mapa] [main] [                                                 ] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through method 'setFilterChains' parameter 0: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1206) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1172) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1109) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:979) ~[spring-context-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:619) ~[spring-context-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:441) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-4.0.0-M3.jar:4.0.0-M3]
+	at com.calabozo.mapa.MapaApplication.main(MapaApplication.java:37) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'filterChain' defined in class path resource [com/calabozo/mapa/config/SecurityConfig.class]: Unsatisfied dependency expressed through method 'filterChain' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1992) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1956) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1848) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1696) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:351) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.webmvc.autoconfigure.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:872) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:827) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1447) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:413) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration': Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:321) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:309) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1383) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1992) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1956) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeanCollection(DefaultListableBeanFactory.java:1848) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1696) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.resolveMethodArguments(AutowiredAnnotationBeanPostProcessor.java:864) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 84 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:222) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:129) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:318) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 101 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'OAuth2AuthorizedClientManager': Failed to instantiate [org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager]: Factory method 'getAuthorizedClientManager' threw exception with message: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory$DependencyObjectProvider.getIfUnique(DefaultListableBeanFactory.java:2593) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration.<init>(OAuth2ClientConfiguration.java:129) ~[spring-security-config-7.0.0-M3.jar:7.0.0-M3]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:209) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 103 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.oauth2.client.OAuth2AuthorizedClientManager]: Factory method 'getAuthorizedClientManager' threw exception with message: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:183) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 122 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientRegistrationRepository' defined in class path resource [org/springframework/boot/security/oauth2/client/autoconfigure/OAuth2ClientConfigurations$ClientRegistrationRepositoryConfiguration.class]: Unsatisfied dependency expressed through method 'clientRegistrationRepository' parameter 0: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1363) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:566) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:735) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:373) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.BeanFactoryUtils.beanOfTypeIncludingAncestors(BeanFactoryUtils.java:451) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2AuthorizedClientManagerRegistrar.getAuthorizedClientManager(OAuth2ClientConfiguration.java:221) ~[spring-security-config-7.0.0-M3.jar:7.0.0-M3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 125 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.security.oauth2.client-org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties': Client id of registration 'google' must not be empty.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1818) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:604) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:526) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1747) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1636) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 143 common frames omitted
+Caused by: java.lang.IllegalStateException: Client id of registration 'google' must not be empty.
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.validateRegistration(OAuth2ClientProperties.java:71) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.validate(OAuth2ClientProperties.java:66) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.boot.security.oauth2.client.autoconfigure.OAuth2ClientProperties.afterPropertiesSet(OAuth2ClientProperties.java:62) ~[spring-boot-security-oauth2-client-4.0.0-M3.jar:4.0.0-M3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1865) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1814) ~[spring-beans-7.0.0-M9.jar:7.0.0-M9]
+	... 154 common frames omitted
+
+2025-12-03T14:54:32.405+01:00  INFO 7772 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : Starting MapaApplication using Java 17.0.16 with PID 7772 (D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa\target\classes started by daw in D:\ServidorExamen\Desarrollo-Entorno-Servidor-2526\SPRINGBOOT\calabozo\mapa)
+2025-12-03T14:54:32.412+01:00  INFO 7772 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-12-03T14:54:33.505+01:00  INFO 7772 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-03T14:54:33.580+01:00  INFO 7772 --- [mapa] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
+2025-12-03T14:54:34.283+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-03T14:54:34.303+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-03T14:54:34.304+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.11]
+2025-12-03T14:54:34.383+01:00  INFO 7772 --- [mapa] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1906 ms
+2025-12-03T14:54:34.572+01:00 DEBUG 7772 --- [mapa] [main] [                                                 ] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-12-03T14:54:34.795+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-03T14:54:35.029+01:00  INFO 7772 --- [mapa] [main] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.1.Final
+2025-12-03T14:54:35.645+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-03T14:54:35.696+01:00  INFO 7772 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-03T14:54:36.056+01:00  INFO 7772 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2cbc2db2
+2025-12-03T14:54:36.060+01:00  INFO 7772 --- [mapa] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-03T14:54:36.126+01:00  WARN 7772 --- [mapa] [main] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-03T14:54:36.152+01:00  INFO 7772 --- [mapa] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/citydungeon]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: citydungeon/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-03T14:54:37.449+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-03T14:54:37.570+01:00  INFO 7772 --- [mapa] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-03T14:54:37.680+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-03T14:54:37.986+01:00  WARN 7772 --- [mapa] [main] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-03T14:54:38.195+01:00 DEBUG 7772 --- [mapa] [main] [                                                 ] s.w.s.m.m.a.RequestMappingHandlerMapping : 19 mappings in 'requestMappingHandlerMapping'
+2025-12-03T14:54:38.239+01:00 DEBUG 7772 --- [mapa] [main] [                                                 ] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-12-03T14:54:38.284+01:00 DEBUG 7772 --- [mapa] [main] [                                                 ] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-12-03T14:54:38.386+01:00 DEBUG 7772 --- [mapa] [main] [                                                 ] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-12-03T14:54:38.724+01:00  WARN 7772 --- [mapa] [main] [                                                 ] .a.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4e38fadc-b19c-4104-9259-28f1927c9bce
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-12-03T14:54:38.736+01:00  INFO 7772 --- [mapa] [main] [                                                 ] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-12-03T14:54:38.947+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-12-03T14:54:38.971+01:00 DEBUG 7772 --- [mapa] [main] [                                                 ] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, CsrfFilter, LogoutFilter, UsernamePasswordAuthenticationFilter, DefaultResourcesFilter, DefaultLoginPageGeneratingFilter, DefaultLogoutPageGeneratingFilter, BasicAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-12-03T14:54:39.133+01:00  INFO 7772 --- [mapa] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-03T14:54:39.157+01:00  INFO 7772 --- [mapa] [main] [                                                 ] com.calabozo.mapa.MapaApplication        : Started MapaApplication in 7.282 seconds (process running for 7.998)
+2025-12-03T14:54:43.174+01:00  INFO 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-03T14:54:43.175+01:00  INFO 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-03T14:54:43.175+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-12-03T14:54:43.175+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-12-03T14:54:43.176+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@943d0c2
+2025-12-03T14:54:43.177+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@109a462e
+2025-12-03T14:54:43.178+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-12-03T14:54:43.178+01:00  INFO 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-03T14:54:43.200+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /
+2025-12-03T14:54:43.212+01:00  WARN 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-12-03T14:54:43.234+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T14:54:43.297+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/?continue to session
+2025-12-03T14:54:43.302+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@615f61ec, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-12-03T14:54:43.303+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@4c58212
+2025-12-03T14:54:43.305+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-1] [                                                 ] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-03T14:54:43.317+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-2] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /login
+2025-12-03T14:54:43.377+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-4] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /default-ui.css
+2025-12-03T14:54:43.425+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-3] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2025-12-03T14:54:43.430+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-3] [                                                 ] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T14:54:43.431+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-3] [                                                 ] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@615f61ec, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-12-03T14:54:43.434+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-3] [                                                 ] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@4c58212
+2025-12-03T14:54:43.435+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-3] [                                                 ] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-03T14:54:43.440+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-5] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /login
+2025-12-03T14:55:06.346+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-7] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /login
+2025-12-03T14:55:06.386+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-6] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /default-ui.css
+2025-12-03T14:55:06.398+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-10] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2025-12-03T14:55:06.404+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-10] [                                                 ] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-12-03T14:55:06.406+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-10] [                                                 ] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@615f61ec, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-12-03T14:55:06.408+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-10] [                                                 ] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@4c58212
+2025-12-03T14:55:06.408+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-10] [                                                 ] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/login
+2025-12-03T14:55:06.414+01:00 DEBUG 7772 --- [mapa] [http-nio-8080-exec-9] [                                                 ] o.s.security.web.FilterChainProxy        : Securing GET /login
